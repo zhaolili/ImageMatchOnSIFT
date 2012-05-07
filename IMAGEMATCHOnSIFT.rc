@@ -1,0 +1,329 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\IMAGEMATCHOnSIFT.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICONSHOWIMG         ICON    DISCARDABLE     "res\\displayer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 202, 64
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 IMAGEMATCHOnSIFT"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,19,21,21
+    LTEXT           "IMAGEMATCHOnSIFT 1.1 版",IDC_STATIC,40,12,94,8,
+                    SS_NOPREFIX
+    LTEXT           "Author: 赵丽丽<zhao86.job@gmail.com>. ",IDC_STATIC,40,
+                    28,149,8
+    DEFPUSHBUTTON   "确定",IDOK,143,10,38,14,WS_GROUP
+    LTEXT           "Date: Aug. 2010 ",IDC_STATIC,40,41,119,9,SS_CENTERIMAGE
+END
+
+IDD_IMAGEMATCHONSIFT_DIALOG DIALOGEX 0, 0, 207, 198
+STYLE DS_ABSALIGN | DS_SYSMODAL | DS_SETFOREGROUND | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IMAGEMATCHOnSIFT"
+FONT 9, "Times New Roman"
+BEGIN
+    PUSHBUTTON      "Select Img1",IDC_BUTTONSELECTIMG1,6,3,38,12,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "Select Img2",IDC_BUTTONSELECTIMG2,6,18,38,12,BS_CENTER | 
+                    BS_VCENTER
+    EDITTEXT        IDC_EDITSELECTIMG1,50,3,110,12,ES_LOWERCASE | 
+                    ES_AUTOHSCROLL | ES_NOHIDESEL
+    EDITTEXT        IDC_EDITSELECTIMG2,50,18,110,12,ES_LOWERCASE | 
+                    ES_AUTOHSCROLL | ES_NOHIDESEL
+    PUSHBUTTON      "OK",IDC_BUTTONSHOWIMG,166,3,34,12,BS_CENTER | 
+                    BS_VCENTER
+    GROUPBOX        "Sifting Parameters",IDC_STATIC,7,33,193,65
+    LTEXT           "Gauss Window Size:",IDC_STATIC,14,43,60,10,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBOGWS,75,41,31,49,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "Border Distance:",IDC_STATIC,114,43,48,10,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBOBD,165,41,29,39,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Set Distance ratio:",IDC_STATIC,14,124,54,10
+    COMBOBOX        IDC_COMBOSDR,75,122,31,42,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Mag. Threshhold:",IDC_STATIC,114,56,51,10,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBOMT,165,56,29,13,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Initial Smooth Scale:",IDC_STATIC,14,69,60,10
+    CONTROL         "Slider1",IDC_SLIDERIS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,72,72,33,9
+    EDITTEXT        IDC_EDITIS,108,69,20,12,ES_LOWERCASE | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Contrast Distance:",IDC_STATIC,14,82,56,10,
+                    SS_CENTERIMAGE
+    CONTROL         "Slider2",IDC_SLIDERCD,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,72,85,33,9
+    EDITTEXT        IDC_EDITCD,108,83,20,12,ES_LOWERCASE | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Detect",IDC_BUTTONFD,10,100,53,11,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "Match",IDC_BUTTONMATCH,76,100,53,11,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "Cancel",IDC_BUTTONCLEAR,166,18,34,12
+    PUSHBUTTON      "Locate",IDC_BUTTONLOCATE,142,100,53,11,BS_CENTER | 
+                    BS_VCENTER
+    GROUPBOX        "Match Settings",IDC_STATIC,6,113,194,25
+    LTEXT           "Keypoints number of Image1: ",IDC_STATIC,13,147,88,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Keypoints number of Image2: ",IDC_STATIC,13,161,88,11,
+                    SS_CENTERIMAGE
+    LTEXT           "Matched keypoints number:",IDC_STATIC,13,177,88,11
+    EDITTEXT        IDC_EDITKEYPOINTSNUM1,108,146,86,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDITKEYPOINTSNUM2,108,161,86,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDITMATCHEDNUM,108,176,86,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Double Base Img?",IDC_CHECKDBLBASEIMG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,132,77,64,11
+    GROUPBOX        "Static",IDC_STATIC,6,138,194,57
+    LTEXT           "Minimum Res.:",IDC_STATIC,14,56,51,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBOMINIRES,75,56,31,38,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "BBF",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,120,122,27,13
+    CONTROL         "ES",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,162,122,27,13
+END
+
+IDD_IMGDISPLAYER DIALOG DISCARDABLE  0, 0, 187, 111
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_VSCROLL | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "输入图像"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_IMGDISPLAYER,"Static",SS_BLACKFRAME,7,7,165,97
+END
+
+IDD_DIALOGCLOSE DIALOG DISCARDABLE  0, 0, 139, 54
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ImageMatchonSift"
+FONT 10, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,12,30,30,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,30,30,14
+    PUSHBUTTON      "No",IDC_BUTTONNO,54,30,30,14
+    LTEXT           "图像即将关闭，是否保存当前图像？",IDC_STATIC,12,10,117,
+                    14,SS_CENTERIMAGE
+END
+
+IDD_DIALOGMCLOSE DIALOG DISCARDABLE  0, 0, 115, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ImageMatchonSift"
+FONT 10, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,19,27,30,14
+    PUSHBUTTON      "No",IDCANCEL,64,27,30,14
+    CTEXT           "确定要退出当前程序？",IDC_STATIC,21,6,72,20,
+                    SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,7,2,101,42
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "IMAGEMATCHOnSIFT Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "IMAGEMATCHOnSIFT\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "IMAGEMATCHOnSIFT.EXE\0"
+            VALUE "ProductName", "IMAGEMATCHOnSIFT 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_IMAGEMATCHONSIFT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 201
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_IMGDISPLAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_DIALOGCLOSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOGMCLOSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 43
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 IMAGEMATCHOnSIFT(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\IMAGEMATCHOnSIFT.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
